@@ -5,7 +5,7 @@ function App() {
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/employees')
+        fetch('https://springboot-openshit-mysql-demo-git-santhosh5858-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/students')
             .then(response => response.json())
             .then(data => setEmployees(data))
             .catch(error => console.error('Error fetching data:', error));
